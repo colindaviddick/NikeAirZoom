@@ -1,0 +1,214 @@
+#page {
+  display: grid;
+  width: 100%;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "foot";
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #3f3f3f;
+  font-family: "Quattrocento", Serif;
+}
+
+a:hover {
+  color: black;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Quattrocento", Serif;
+}
+
+h1 {
+  font-family: "Oswald", Sans-Serif;
+  color: black;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Quattrocento", Serif;
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+.button {
+  padding: 1em 2em;
+  border-radius: 1em;
+  color: white;
+  background-color: black;
+  font-family: "Oswald", Sans-Serif;
+  border: black 2px solid;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.header {
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  place-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+.header .icon {
+  font-size: 2em;
+  margin-left: 1em;
+  margin-right: auto;
+}
+.header .menu {
+  display: flex;
+  flex-direction: row;
+}
+.header .menu a {
+  color: #3f3f3f;
+  font-weight: bold;
+  font-family: "Oswald", Sans-Serif;
+  margin: 2em 1em;
+  border-bottom: white 2px solid;
+  border-left: rgba(0, 255, 0, 0) 2px solid;
+  transition: border-bottom 1s, border-left 1s;
+}
+.header .menu a:hover {
+  border-bottom: lime 2px solid;
+  border-left: rgba(0, 255, 0, 0.5) 2px solid;
+}
+.header .loginbuttons {
+  margin-left: auto;
+}
+
+.bannerone {
+  display: grid;
+  height: 100vh;
+  background-image: url(/images/pexels-ray-piedra-1456705.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  grid-template: 1fr 4fr/1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+.bannerone .content {
+  grid-row: 2;
+  grid-column: 2;
+  padding: 2em;
+  margin-top: auto;
+  text-align: right;
+  padding-bottom: 2em;
+}
+.bannerone .content h1 {
+  font-size: 8em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.bannerone .content p {
+  font-family: "Oswald", Sans-Serif;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 2.5em;
+}
+
+.bannertwo {
+  height: 100vh;
+  background-image: url(/images/pexels-ray-piedra-1456706.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template: 1fr/1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+.bannertwo .content {
+  grid-row: 1;
+  grid-column: 2;
+  padding: 2em;
+  margin-top: auto;
+  text-align: center;
+  padding-bottom: 2em;
+}
+.bannertwo .content h1 {
+  text-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  font-size: 8em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.bannertwo .content p {
+  font-family: "Oswald", Sans-Serif;
+  text-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 2.5em;
+}
+
+.bannerthree {
+  height: 100vh;
+  background-image: url(/images/pexels-ray-piedra-1537671.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template: 1fr 5fr 1fr/1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+.bannerthree .content {
+  grid-row: 2;
+  grid-column: 1;
+  margin-top: auto;
+  text-align: left;
+  padding-bottom: 2em;
+  padding: 2em;
+}
+.bannerthree .content h1 {
+  margin-top: 0;
+  font-size: 8em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.bannerthree .content p {
+  font-family: "Oswald", Sans-Serif;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 2.5em;
+}
+
+.footer {
+  display: grid;
+  place-items: center;
+  background-color: black;
+  height: 100vh;
+}
+.footer .content {
+  display: grid;
+  place-items: center;
+  width: 25%;
+  text-align: center;
+}
+.footer .content * {
+  color: white;
+}
+.footer .content .links {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+}
+.footer .content .links .sociallink {
+  padding: 0.6em;
+  font-size: 2em;
+}
