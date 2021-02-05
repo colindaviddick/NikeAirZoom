@@ -1,44 +1,27 @@
 "use strict";
 
-var input = "";
-var toDoList = [];
-
-while (input != "quit") {
-  input = prompt('Enter "new" to add an entry, "list" to show entries, "delete to remove an entry, or "quit" to exit.').toLowerCase();
-
-  if (input === "new") {
-    toDoList.push(prompt("What would you like to add to your list?"));
-    console.log("    ***    ");
-
-    for (var i = 0; i < toDoList.length; i++) {
-      console.log("".concat(i, ": ").concat(toDoList[i]));
-    }
-
-    console.log("    ***    ");
-  } else if (input === "list") {
-    console.log("    ***    ");
-
-    for (var _i = 0; _i < toDoList.length; _i++) {
-      console.log("".concat(_i, ": ").concat(toDoList[_i]));
-    }
-
-    console.log("    ***    ");
-  } else if (input === "delete") {
-    var removeIndex = prompt("Type the index of the entry you want to delete. Leave empty to cancel");
-
-    if (removeIndex < 0 || removeIndex > toDoList.length || removeIndex === "") {
-      console.log("Cancelled.");
-    } else {
-      toDoList.splice(removeIndex, 1);
-      console.log("    ***    ");
-
-      for (var _i2 = 0; _i2 < toDoList.length; _i2++) {
-        console.log("".concat(_i2, ": ").concat(toDoList[_i2]));
-      }
-
-      console.log("    ***    ");
-    }
+window.onscroll = function (ev) {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    document.getElementById("buttonone").className = "buttonbottom";
+    document.getElementById("buttontwo").className = "buttonbottom";
+    document.getElementById("menulinkone").className = "menulinkbottom";
+    document.getElementById("menulinktwo").className = "menulinkbottom";
+    document.getElementById("menulinkthree").className = "menulinkbottom";
+    document.getElementById("menulinkfour").className = "menulinkbottom";
+    document.getElementById("github").className = "githubbottom sociallink fab fa-github";
+    document.getElementById("facebook").className = "facebookbottom sociallink fab fa-facebook";
+    document.getElementById("instagram").className = "instagrambottom sociallink fab fa-instagram";
+    document.getElementById("youtube").className = "youtubebottom sociallink fab fa-youtube";
   } else {
-    console.log("Not a valid response");
+    document.getElementById("buttonone").className = "normalbutton";
+    document.getElementById("buttontwo").className = "normalbutton";
+    document.getElementById("menulinkone").className = "menulinknormal";
+    document.getElementById("menulinktwo").className = "menulinknormal";
+    document.getElementById("menulinkthree").className = "menulinknormal";
+    document.getElementById("menulinkfour").className = "menulinknormal";
+    document.getElementById("github").className = "socialnormal sociallink fab fa-github";
+    document.getElementById("facebook").className = "socialnormal sociallink fab fa-facebook";
+    document.getElementById("instagram").className = "socialnormal sociallink fab fa-instagram";
+    document.getElementById("youtube").className = "socialnormal sociallink fab fa-youtube";
   }
-}
+};

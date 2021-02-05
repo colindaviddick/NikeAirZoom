@@ -64,16 +64,17 @@ img {
   width: 100%;
 }
 
-.button {
+.normalbutton {
   padding: 1em 2em;
   border-radius: 1em;
   color: white;
   background-color: black;
   font-family: $heading;
+  transition: border 1s;
   border: black 2px solid;
 }
 
-.button:hover {
+.normalbutton:hover {
   background-color: white;
   color: black;
   font-weight: bold;
@@ -104,14 +105,23 @@ img {
   .menu {
     display: flex;
     flex-direction: row;
-    a {
+    .menulinknormal {
+      transition: color 1s, border-bottom 1s, border-left 1s;
       color: rgb(63, 63, 63);
       font-weight: bold;
       font-family: $heading;
       margin: 2em 1em;
       border-bottom: white 2px solid;
       border-left: rgba(0, 255, 0, 0) 2px solid;
-      transition: border-bottom 1s, border-left 1s;
+    }
+    .menulinkbottom {
+      transition: color 1s;
+      color: lime;
+      font-weight: bold;
+      font-family: $heading;
+      margin: 2em 1em;
+      border-bottom: white 2px solid;
+      border-left: rgba(0, 255, 0, 0) 2px solid;
     }
   
     a:hover {
@@ -121,6 +131,9 @@ img {
   }
   .loginbuttons {
     margin-left: auto;
+    #buttontwo {
+      margin-right: 1em;
+    }
   }
 }
 
@@ -148,7 +161,7 @@ img {
     padding-bottom: 2em;
 
     h1 {
-      font-size: 8em;
+      font-size: 9em;
       padding-bottom: 0;
       margin-bottom: 0;
     }
@@ -247,7 +260,7 @@ img {
     width: 25%;
     text-align: center;
 
-    * {
+    h1, h2, p {
       color: white;
     }
 
@@ -263,6 +276,37 @@ img {
     }
   }
 }
+.buttonbottom {
+  padding: 1em 2em;
+  border-radius: 1em;
+  color: white;
+  background-color: black;
+  font-family: $heading;
+  transition: border 1s;
+  border: lime 2px solid;
+}
+
+.socialnormal {
+  transition: color 0.8s;
+  color: #555555;
+}
+.githubbottom {
+  transition: 2s;
+  color: white;
+}
+.facebookbottom {
+  transition: 2s;
+  color: lightseagreen;
+}
+.instagrambottom {
+  transition: 2s;
+  color: blueviolet;
+}
+.youtubebottom {
+  transition: 2s;
+  color: red;
+}
+
 
 // @media (max-width: 768px) {}
 

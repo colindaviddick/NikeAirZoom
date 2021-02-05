@@ -39,16 +39,17 @@ img {
   width: 100%;
 }
 
-.button {
+.normalbutton {
   padding: 1em 2em;
   border-radius: 1em;
   color: white;
   background-color: black;
   font-family: "Oswald", Sans-Serif;
+  transition: border 1s;
   border: black 2px solid;
 }
 
-.button:hover {
+.normalbutton:hover {
   background-color: white;
   color: black;
   font-weight: bold;
@@ -74,14 +75,23 @@ img {
   display: flex;
   flex-direction: row;
 }
-.header .menu a {
+.header .menu .menulinknormal {
+  transition: color 1s, border-bottom 1s, border-left 1s;
   color: #3f3f3f;
   font-weight: bold;
   font-family: "Oswald", Sans-Serif;
   margin: 2em 1em;
   border-bottom: white 2px solid;
   border-left: rgba(0, 255, 0, 0) 2px solid;
-  transition: border-bottom 1s, border-left 1s;
+}
+.header .menu .menulinkbottom {
+  transition: color 1s;
+  color: lime;
+  font-weight: bold;
+  font-family: "Oswald", Sans-Serif;
+  margin: 2em 1em;
+  border-bottom: white 2px solid;
+  border-left: rgba(0, 255, 0, 0) 2px solid;
 }
 .header .menu a:hover {
   border-bottom: lime 2px solid;
@@ -89,6 +99,9 @@ img {
 }
 .header .loginbuttons {
   margin-left: auto;
+}
+.header .loginbuttons #buttontwo {
+  margin-right: 1em;
 }
 
 .bannerone {
@@ -111,7 +124,7 @@ img {
   padding-bottom: 2em;
 }
 .bannerone .content h1 {
-  font-size: 8em;
+  font-size: 9em;
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -200,7 +213,7 @@ img {
   width: 25%;
   text-align: center;
 }
-.footer .content * {
+.footer .content h1, .footer .content h2, .footer .content p {
   color: white;
 }
 .footer .content .links {
@@ -211,4 +224,39 @@ img {
 .footer .content .links .sociallink {
   padding: 0.6em;
   font-size: 2em;
+}
+
+.buttonbottom {
+  padding: 1em 2em;
+  border-radius: 1em;
+  color: white;
+  background-color: black;
+  font-family: "Oswald", Sans-Serif;
+  transition: border 1s;
+  border: lime 2px solid;
+}
+
+.socialnormal {
+  transition: color 0.8s;
+  color: #555555;
+}
+
+.githubbottom {
+  transition: 2s;
+  color: white;
+}
+
+.facebookbottom {
+  transition: 2s;
+  color: lightseagreen;
+}
+
+.instagrambottom {
+  transition: 2s;
+  color: blueviolet;
+}
+
+.youtubebottom {
+  transition: 2s;
+  color: red;
 }
