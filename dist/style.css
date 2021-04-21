@@ -107,7 +107,7 @@ img {
 .bannerone {
   display: grid;
   height: 100vh;
-  background-image: url(/images/pexels-ray-piedra-1456705.jpg);
+  background-image: url(images/pexels-ray-piedra-1456705.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -137,7 +137,7 @@ img {
 
 .bannertwo {
   height: 100vh;
-  background-image: url(/images/pexels-ray-piedra-1456706.jpg);
+  background-image: url(images/pexels-ray-piedra-1456706.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -171,7 +171,7 @@ img {
 
 .bannerthree {
   height: 100vh;
-  background-image: url(/images/pexels-ray-piedra-1537671.jpg);
+  background-image: url("images/pexels-ray-piedra-1537671.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
